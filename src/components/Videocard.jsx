@@ -51,7 +51,7 @@ function Videocard({ displayData, setDeleteVideoResponse, insideCategory }) {
             </Card>
             <Modal size='lg' show={show} onHide={handleClose}>               
                 <Modal.Header closeButton>
-                    <Modal.Title>Avesham Song</Modal.Title>
+                    <Modal.Title>{displayData?.caption}</Modal.Title>
                 </Modal.Header>               
                 <Modal.Body><iframe width="100%" height="315" src={`${displayData?.youtubeUrl}?autoplay=1`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></Modal.Body>
             </Modal>
